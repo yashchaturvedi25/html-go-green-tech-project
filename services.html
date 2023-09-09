@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABOUT US</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+            background-color: rgb(69 169 213);
+        }
+        #navbar ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+
+        }
+
+        #navbar li {
+            display: inline-block;
+
+        }
+
+        #navbar a {
+            text-decoration: none;
+            color: black;
+            width: 150px;
+            display: block;
+            padding: 25px 25px;
+            text-transform: uppercase;
+            text-align: center;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 18px;
+
+        }
+
+        #navbar a:hover {
+            background-color: rgb(93, 194, 194);
+            transition: all 0.6s;
+        }
+
+        #services {
+            margin: 30px;
+            display: flex;
+            flex-direction: column;
+            flex-grow: initial;
+        }
+
+        #services h2 {
+            text-align: center;
+            font-size: 47px;
+            font-weight: bolder;
+            margin: 19px;
+            padding: 25px;
+        }
+
+        #services .box {
+            border: 2px solid none;
+            margin: 12px 2px;
+            padding: 3px 2px;
+            border-radius: 20px;
+        }
+
+        #services .box img {
+            height: 200px;
+            width: 350px;
+            display: block;
+            margin: auto;
+            border-radius: 69px;
+            padding: 30px;
+            transition: all 2s ease-in-out 0s;
+        }
+
+        #services p {
+            display: flexbox;
+            flex-direction: row;
+            height: 100px;
+            width: fit-content;
+            text-align: justify;
+            font-size: 22px;
+            font-family: 'Times New Roman', Times, serif;
+            margin: 3px;
+            padding: 3px;
+        }
+
+        #services .box img:hover {
+            background-color: white;
+            height: 300px;
+            width: 400px;
+            border-radius: 50%;
+            font-family: cursive;
+            font-size: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav id="navbar">
+        <ul>
+            <li class="item"><a href="home.html">HOME</a></li>
+            <li class="item"><a href="aboutus.html">ABOUT US</a></li>
+            <li class="item"><a href="home.html#connectus">CONTACT US</a></li>
+            <li class="item"><a href="services.html">SERVICES</a></li>
+        </ul>
+    </nav>
+    <section>
+        <div id="services">
+            <div class="box">
+                <h2>TRUSTED SERVICES</h2>
+                <img src="data:image/png;base64,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"
+                    alt="net error">
+                <p>Trust is one of the most valuable virtues in any relationship. Trust is very important whether it's a
+                    friendship, romantic relationship or customer - owner relationship. Trust takes years to build, and
+                    it takes
+                    seconds to be lost. That's Why we value our customer very high do every possible hardwork to meet
+                    their requirements.
+                    Now we have a wide range of 100% satisfied customers & this number goes on increasing day by day.
+                </p>
+            </div>
+            <div class="box">
+                <h2>NATURE FRIENDLY</h2>
+                <img src="https://www.nicepng.com/png/detail/46-463611_eco-friendly-eco-friendly-icon-png.png"
+                    alt="net error">
+                <p>What's the importance of an eco-friendly lifestyle? Becoming more eco-friendly will allow you to
+                    preserve the planet for future generations, limit your exposure to harmful substances and make
+                    informed decisions. Small changes in your daily live are enough to make a difference. <br>
+                    Our Services provide you that Eco-Friendly ideas and changd your life completely. We emphasise to
+                    use green tech instead of using our limited Natural resources....
+                </p>
+            </div>
+            <div class="box">
+                <h2>WELL EXPERIENCED</h2>
+                <img src="data:image/png;base64,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"
+                    alt="net error">
+                <p>In past recent years We have gained an invaluable amount of experienced.
+                    We succesfully completed our Projects with zero client complaints also in addition to that our
+                    clients list keeps on
+                    increasing.Also Our family is keep growing with new and skilled people which include student of
+                    diffrent Universities.
+                    They have some out of the box ideas which lay the foundation of future... <br>
+                 
+                </p>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
